@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twin Peaks Radio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="app">
+        <canvas id="webgl"></canvas>
+        <div id="ui-layer">
+            <header>
+                <h1>TWIN PEAKS RADIO</h1>
+                <p class="subtitle">"The owls are not what they seem"</p>
+            </header>
+            <main>
+                <div class="radio-controls">
+                    <div class="station-display">
+                        <span id="frequency">88.3 FM</span>
+                        <span id="static-indicator">STATIC</span>
+                    </div>
+                    <button id="play-btn">TUNE IN</button>
+                    <div class="mode-controls">
+                        <button id="mode-intro" class="mode-btn active">INTRO</button>
+                        <button id="mode-redroom" class="mode-btn">RED ROOM</button>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <p>Broadcast from the Black Lodge</p>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>
